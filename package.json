@@ -8,8 +8,8 @@
     "dev": "yarn watch:eleventy & yarn watch:scss",
     "watch:eleventy": "eleventy --serve",
     "watch:scss": "sass assets/scss:_site/assets/css --watch",
-    "build:scss": "sass assets/scss:_site/assets/css --watch",
-    "build": "npx @11ty/eleventy && build:scss"
+    "build:scss": "sass assets/scss:_site/assets/css ",
+    "build": "npx @11ty/eleventy && yarn build:scss"
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1",
