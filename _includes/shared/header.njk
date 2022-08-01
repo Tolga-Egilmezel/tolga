@@ -1,0 +1,25 @@
+{% set navPages = collections.all | eleventyNavigation %}
+
+{% set navigation = [] %}
+{% for nav in navPages %}
+
+{% set language = nav.url.substring(1, 3) %}
+{% set isNonEnglish = site.langs.includes("/" + language + "/") %}
+
+{% set item = {data: nav, lang: language if isNonEnglish else "en" } %}
+{% set navigation = (navigation.push(item), navigation) %}
+
+{% endfor %}
+
+{% set navigation = navigation | groupby("lang") %}
+
+<header class="header">
+  <nav class="nav">
+    {%- for nav in navigation[lang] -%}
+    <a class="nav__link{{ ' -active' if nav.data.url == page.url }}" href="{{ nav.data.url | url }}">{{ nav.data.title
+      }}</a>
+    {%- endfor -%}
+  </nav>
+  <nav>
+  </nav>
+</header>
