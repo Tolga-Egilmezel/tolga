@@ -4,6 +4,14 @@
   functions = "netlify/functions"
   publish = "./_site"
 
+[[headers]]
+ for = "/.well-known/atproto-did"
+[headers.values]
+ Cache-Control = '''
+    public,
+    max-age=0'''
+ Content-Type = "text/plain"
+
 [[redirects]]
  from = "/.well-known/*"
  to = "/well-known/:splat"
