@@ -19,3 +19,17 @@
   #  publish = "dist" # Folder with the static content for _redirect file
 
   ## more info on configuring this file: https://www.netlify.com/docs/netlify-toml-reference/
+
+[[headers]]
+for = "/.well-known/atproto"
+[headers.values]
+Cache-Control = '''
+    public,
+    max-age=0'''
+Content-Type = "text/plain"
+X-Content-Type-Options = "nosniff"
+
+[[redirects]]
+from = "/.well-known/*"
+to = "/well-known/:splat"
+status = 200
