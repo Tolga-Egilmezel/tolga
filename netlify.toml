@@ -5,6 +5,6 @@
   publish = "./_site"
 
 [[redirects]]
-  from = "/.well-known/*"
-  to = "/well-known/:splat"
-  status = 200e
+ from = "/.well-known/*"
+ to = "/well-known/:splat"
+ status = 200
