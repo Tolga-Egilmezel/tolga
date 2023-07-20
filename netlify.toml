@@ -20,14 +20,14 @@
 
   ## more info on configuring this file: https://www.netlify.com/docs/netlify-toml-reference/
 
-[[headers]]
-for = "/.well-known/atproto"
-[headers.values]
-Cache-Control = '''
-    public,
-    max-age=0'''
-Content-Type = "text/plain"
-X-Content-Type-Options = "nosniff"
+# [[headers]]
+# for = "/.well-known/atproto"
+# [headers.values]
+# Cache-Control = '''
+#     public,
+#     max-age=0'''
+# Content-Type = "text/plain"
+# X-Content-Type-Options = "nosniff"
 
 [[redirects]]
 from = "/.well-known/*"
