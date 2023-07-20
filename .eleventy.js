@@ -1,9 +1,11 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
+
 const filters = require("./filters/");
 
 module.exports = function (eleventyConfig) {
 
+  eleventyConfig.addPassthroughCopy("well-known");
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   eleventyConfig.setBrowserSyncConfig({

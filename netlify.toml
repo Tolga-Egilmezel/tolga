@@ -7,4 +7,4 @@
 [[redirects]]
   from = "/.well-known/*"
   to = "/well-known/:splat"
-  status = 200
+  status = 200e
