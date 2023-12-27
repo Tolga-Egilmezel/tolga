@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+
+<head>
+  {% include "../meta/head.njk" %}
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="https://use.typekit.net/ygl8cle.css">
+
+</head>
+
+<body>
+  <main>
+    {% include "../shared/header.njk" %}
+
+    <section class="content">
+      {{ content | safe }}
+      {% set posts = collections["blog_" + locale] %}
+      {{locale}}
+
+      {% for post in posts %}
+      <a href="{{ post.url }}">{{ post.data.title }}</a>
+      {{ post.data.title }} {{locale}}
+      {% endfor %}
+    </section>
+
+    {% include "../shared/footer.njk" %}
+  </main>
+
+  {% block script %}{% endblock %}
+</body>
+
+</html>

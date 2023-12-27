@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+
+<head>
+  {% include "../meta/head.njk" %}
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/weekly.css">
+  <link rel="stylesheet" href="https://use.typekit.net/ygl8cle.css">
+
+</head>
+
+<body>
+  <main>
+    {% include "../shared/header.njk" %}
+
+    <section>
+      {{ content | safe }}
+
+      {% set posts = collections["weekly_" + locale] %}
+      {{locale}}
+
+      {% for post in posts %}
+      {{ post.data.title }} {{locale}}
+      {% endfor %}
+    </section>
+
+    {% include "../shared/footer.njk" %}
+  </main>
+
+  {% block script %}{% endblock %}
+</body>
+
+</html>

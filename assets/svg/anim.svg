@@ -1,0 +1,27 @@
+<svg class="loader rotate" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  width="128px" height="128px" viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve">
+  <path id="arc1" fill="none" stroke="#1D1D1B" stroke-width="3" stroke-dasharray="140" stroke-dashoffset="140"
+    stroke-miterlimit="10"
+    d="M18.864,64c0-24.949,20.188-45.136,45.136-45.136 M109.137,64c0-24.948-20.188-45.135-45.137-45.135">
+    <animate attributeName="stroke-dashoffset" from="140" to="0" dur="5s" begin="0s" keyTimes="0.39; 0.575; 0.565; 1"
+      fill="freeze" />
+    <animate attributeName="d"
+      form="M18.864,64c0-24.949,20.188-45.136,45.136-45.136 M109.137,64c0-24.948-20.188-45.135-45.137-45.135"
+      to="M39.198,64c0-13.709,11.093-24.802,24.802-24.802 M88.803,64c0-13.709-11.094-24.802-24.803-24.802" dur="5s"
+      begin="0s" keyTimes="0.39; 0.575; 0.565; 1" fill="freeze" />
+  </path>
+  <path id="arc2" fill="none" stroke="#1D1D1B" stroke-width="3" stroke-miterlimit="10" stroke-dasharray="140"
+    stroke-dashoffset="140"
+    d="M109.136,64c0,24.949-20.188,45.136-45.136,45.136 M18.864,64c0,24.948,20.188,45.137,45.136,45.137">
+    <animate attributeName="stroke-dashoffset" from="140" to="0" dur="5s" begin="0s" keyTimes="0.39; 0.575; 0.565; 1"
+      fill="freeze" />
+    <animate attributeName="d"
+      form="M109.136,64c0,24.949-20.188,45.136-45.136,45.136 M18.864,64c0,24.948,20.188,45.137,45.136,45.137"
+      to="M88.803,64c0,13.708-11.094,24.802-24.803,24.802 M39.198,64c0,13.709,11.093,24.803,24.802,24.803" dur="5s"
+      begin="0s" keyTimes="0.39; 0.575; 0.565; 1" fill="freeze" />
+  </path>
+  <circle id="circle" fill="#1D1D1B" stroke="#1D1D1B" stroke-width="3" stroke-miterlimit="10" cx="64" cy="64" r="32">
+    <animate attributeName="r" dur="1s" begin="2.5s" values="32; 36; 43; 41; 44" keyTimes="0; 0.5; 0.7; 0.85; 1"
+      fill="freeze" />
+  </circle>
+</svg>
