@@ -1,17 +1,16 @@
-# example netlify.toml
 [build]
-  command = "yarn build"
-  functions = "netlify/functions"
-  publish = "./_site"
+ command = "npm run build"
+ functions = "netlify/functions"
+ publish = "./_site"
 
 [[headers]]
  for = "/.well-known/atproto-did"
-[headers.values]
- Access-Control-Allow-Origin = "*"
- Cache-Control = '''
-    public,
-    max-age=0'''
- Content-Type = "text/plain"
+ [headers.values]
+  Access-Control-Allow-Origin = "*"
+  Cache-Control = '''
+   public,
+   max-age=0'''
+  Content-Type = "text/plain"
 
 [[redirects]]
  from = "/.well-known/*"

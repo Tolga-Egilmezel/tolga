@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="{{ lang }}">
 
-<head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<head>
+		<link rel="preconnect" href="https://use.typekit.net" crossorigin>
+		<link rel="preconnect" href="https://p.typekit.net" crossorigin>
 
-  {% include "../meta/head.njk" %}
+		{% include "../meta/head.njk" %}
 
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="stylesheet" href="/assets/css/home.css">
+		<link rel="stylesheet" href="/assets/css/main.css">
+		<link rel="stylesheet" href="/assets/css/home.css">
 
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.typekit.net/jyk5aix.css">
 
-</head>
+	</head>
 
-<body>
-  <main class="home">
+	<body>
+		<main class="home">
 
-    <section class="content">
-      {{ content | safe }}
-    </section>
+			<section class="content">
+				{{ content | safe }}
+			</section>
 
-    {% include "../shared/footer.njk" %}
-  </main>
-</body>
+			{% include "../shared/footer.njk" %}
+
+		</main>
+	</body>
 
 </html>

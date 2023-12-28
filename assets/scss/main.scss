@@ -1,5 +1,5 @@
 @import "./initial";
-@import "./header";
+// @import "./header";
 @import "./footer";
 
 main {
@@ -9,12 +9,13 @@ main {
   margin: 0;
 
   width: 100vw;
-  min-height: 100vh;
+  min-height: 100dvh;
 
   display: flex;
   flex-direction: column;
   align-items: stretch;
   justify-content: flex-start;
+	background-color: red;
 }
 
 .content {
@@ -22,9 +23,9 @@ main {
 
   display: flex;
   flex-direction: column;
-  align-self: center;
+  // align-self: center;
   align-items: flex-start;
   justify-content: flex-start;
 
-  max-width: 80ch;
+  // max-width: 80ch;
 }
