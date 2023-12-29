@@ -5,11 +5,11 @@
   "repository": "https://github.com/Tolga-Egilmezel/tolga.git",
   "license": "MIT",
   "scripts": {
-    "dev": "npm run watch:eleventy & npm run watch:scss",
+    "dev": "yarn watch:eleventy & yarn watch:scss",
     "watch:eleventy": "eleventy --serve",
     "watch:scss": "sass assets/scss:_site/assets/css --watch",
     "build:scss": "sass assets/scss:_site/assets/css ",
-    "build": "npx @11ty/eleventy && npm run build:scss"
+    "build": "npx @11ty/eleventy && yarn build:scss"
   },
   "devDependencies": {
     "@11ty/eleventy": "canary",
