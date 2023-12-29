@@ -12,9 +12,9 @@
     "build": "npx @11ty/eleventy && yarn build:scss"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.1",
-    "@11ty/eleventy-navigation": "^0.3.3",
-    "netlify-cli": "^10.7.1",
-    "sass": "^1.53.0"
+    "@11ty/eleventy": "canary",
+    "@11ty/eleventy-navigation": "^0.3.5",
+    "netlify-cli": "^17.10.1",
+    "sass": "^1.69.5"
   }
 }

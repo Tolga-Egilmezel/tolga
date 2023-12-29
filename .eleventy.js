@@ -1,6 +1,5 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
-
 const filters = require("./filters/");
 
 module.exports = function (eleventyConfig) {
@@ -8,8 +7,21 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("well-known");
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
-  eleventyConfig.setBrowserSyncConfig({
-    files: './_site/assets/css/**/*.css'
+  eleventyConfig.setServerOptions({
+    liveReload: true,
+    domDiff: true,
+    port: 8080,
+
+    watch: ["_site/assets/**/*.css"],
+    showAllHosts: true,
+
+    https: {
+      // key: "./localhost.key",
+      // cert: "./localhost.cert",
+    },
+
+    encoding: "utf-8",
+    showVersion: false,
   });
 
   eleventyConfig.addPassthroughCopy("assets/svg");
